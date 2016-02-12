@@ -1,0 +1,15 @@
+#Problem 11-2
+
+altitude = 1
+t = 0
+
+humidity = int(input("Enter the humidity :"))
+margaret_hours = int(input("Enter the maximum number of hours Margaret will wait: "))
+
+while (altitude > 0) and (t <= margaret_hours):
+    t = t + 1
+    altitude = -6*t**4 + humidity*t**3 + 2*t**2 + t
+
+if t <= margaret_hours:
+    print("The baloon first touches ground at hour: ")
+    print(t)
