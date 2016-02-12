@@ -1,0 +1,13 @@
+#Problem 11-1
+
+number_antenna = int(input("Enter the number of antenna: "))
+number_eyes = int(input("Enter the number of eyes: "))
+
+if number_antenna >= 3 and number_eyes <= 4:
+    print("TroyMartian")
+
+elif number_antenna <= 6 and number_eyes >= 2:
+    print("VladSaturnian")
+
+elif number_antenna <= 2 and number_eyes <= 3:
+    print("GraemeMercurian")
