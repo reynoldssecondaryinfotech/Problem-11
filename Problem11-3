@@ -1,0 +1,12 @@
+# Problem 11-3 Sumac Sequences
+
+a = int(input("Enter term 1: "))
+b = int(input("Enter term 2: "))
+
+count = 0
+while a >= b and a >= 0 and b >= 0:
+    count = count + 1
+    c = a - b
+    a = b
+    b = c
+print(count)
